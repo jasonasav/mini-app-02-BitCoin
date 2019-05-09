@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Checkout extends Component {
+class App extends Component {
   constructor(props) {
       super(props);
       this.state = {
@@ -14,11 +14,11 @@ class Checkout extends Component {
       return (
       
         <div>
-            <h1>React App BoilerPlate from Sen</h1>
+            <h1>BitCoinViewer</h1>
         </div>
         
       )
   };
 };
 
-export default Checkout;
+export default App;
