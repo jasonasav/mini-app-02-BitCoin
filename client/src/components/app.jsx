@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Disclaimerfooter from './Disclaimerfooter.jsx'
 
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
       
         <div>
             <h1>BitCoinViewer</h1>
+            <Disclaimerfooter disclaimer={this.state.bitcoin.disclaimer}/>
         </div>
         
       )
