@@ -2,24 +2,12 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Disclaimerfooter from './Disclaimerfooter.jsx'
 import Chart from './chart.jsx';
-import { Bar } from 'react-chartjs-2';
  
-// function createDates(dates) {
-  
-// }
-
 class App extends Component {
   constructor(props) {
     super(props);
       this.state = {
-        bitcoin: [],
-        fakeData: { labels: ["2019-04-09", "ggg", "ggg", "April", "May", "June", "July"],
-        datasets: [{
-        label: "BitCoin Closing Price",
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [5190, 6000, 2433, 2434, 4320, 3430, 4500],
-        }]},
+        bitcoin: '',
         dates: '',
         prices:'',
       };
@@ -51,9 +39,8 @@ class App extends Component {
     return (
       <div>
         <h1>BitCoinViewer</h1>
-        <Bar data={this.state.fakeData} />
         <Chart dates={this.state.dates} prices={this.state.prices} />
-        {/* <Disclaimerfooter disclaimer={this.state.bitcoin}/> */}
+        <Disclaimerfooter disclaimer={this.state.bitcoin}/>
       </div>  
     )
   };
