@@ -11,4 +11,3 @@ const Disclaimerfooter = ({ disclaimer }) => {
 export default Disclaimerfooter;
 
 
-// chart file dist/Chart.bundle.min.js

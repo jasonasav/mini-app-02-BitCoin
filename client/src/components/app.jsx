@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Disclaimerfooter from './Disclaimerfooter.jsx'
-// import Chart from './chart.jsx';
+import Chart from './chart.jsx';
 import { Bar } from 'react-chartjs-2';
  
 // function createDates(dates) {
@@ -52,8 +52,8 @@ class App extends Component {
       <div>
         <h1>BitCoinViewer</h1>
         <Bar data={this.state.fakeData} />
-        {/* <Chart dates={Object.keys(this.state.bitcoin.bpi)} price={Object.values(this.state.bitcoin.bpi)} /> */}
-        <Disclaimerfooter disclaimer={this.state.bitcoin}/>
+        <Chart dates={this.state.dates} prices={this.state.prices} />
+        {/* <Disclaimerfooter disclaimer={this.state.bitcoin}/> */}
       </div>  
     )
   };
