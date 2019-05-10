@@ -1,9 +1,18 @@
 const axios = require('axios');
 
+// function getBitcoin(){
+//     return axios.get('https://api.coindesk.com/v1/bpi/currentprice/BTC.json')
+//                  .then(response => response.data)
+// }
+
 function getBitcoin(){
-    return axios.get('https://api.coindesk.com/v1/bpi/currentprice/BTC.json')
+    return axios.get('https://api.coindesk.com/v1/bpi/historical/close.json')
                  .then(response => response.data)
 }
+
+
+
+// https://api.coindesk.com/v1/bpi/historical/close.json
 
 
 module.exports = {
