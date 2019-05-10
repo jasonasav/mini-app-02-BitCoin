@@ -7,6 +7,7 @@ module.exports = {
     path: __dirname + '/client/dist'
 
   },
+
   module: {
     rules: [
       { 
