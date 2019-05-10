@@ -1,6 +1,5 @@
 var path = require('path');
 
-
 module.exports = {
   entry: __dirname + '/client/src/index.jsx',
   output: {
